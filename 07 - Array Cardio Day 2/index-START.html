@@ -56,6 +56,11 @@
     // Array.prototype.findIndex()
     // Find the comment with this ID
     // delete the comment with the ID of 823423
+    const gameOver = comments.findIndex(comment => comment.id === 823423);
+    console.log(gameOver);
+
+    comments.splice(gameOver, 1)
+    console.table(comments)
 
   </script>
 </body>
